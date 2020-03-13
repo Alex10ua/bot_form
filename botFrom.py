@@ -44,8 +44,8 @@ class FormBot():
         time.sleep(15)
 
 
-bot = FormBot()
-bot.login()
-bot.fillin()
+#bot = FormBot()
+#bot.login()
+#bot.fillin()
 
 
