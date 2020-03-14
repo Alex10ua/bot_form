@@ -4,3 +4,5 @@ https://chromedriver.storage.googleapis.com/index.html?path=80.0.3987.106/ to ge
 pip install selenium
 
 pip install schedule
+
+Run: python Programsleep.py
