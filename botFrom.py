@@ -17,13 +17,8 @@ class FormBot():
 
     def randomtemperature(self):
         generatedvalue = random.randint(3, 8)
-        logger = logging.getLogger('botForm.py')
-        hdlr = logging.FileHandler('botInfo.log')
-        formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
-        hdlr.setFormatter(formatter)
-        logger.addHandler(hdlr)
-        logger.setLevel(logging.WARNING)
-        logger.info('temperature = 36.'+str(generatedvalue))
+        logging.basicConfig(filename='debug.log', format='%(asctime)s %(levelname)s %(message)s', level=logging.DEBUG)
+        logging.debug('temperature = 36.'+str(generatedvalue))
         return generatedvalue
 
     def randomStar(self):
